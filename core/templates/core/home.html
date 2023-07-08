@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="mt-5">
+    <div class="text-center"> 
+    <img src=" {% static 'core/images/img.jpg' %}" alt="profilePic" class="img-thumbnail" width="250px" height="150px">
+</div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-blod text-white  mt-5 st-font">
+            Hello,
+        </h1>
+
+
+        <div class="px-4" style="line-height:2rem">
+            <p style="text-indent:100px;" class="text-white">I am <b class="text-warning ">Jessica Barc</b>  having 5 years of  Exeprience Throughout my career, I have honed my skills in various programming languages such as <b class="text-warning"> JavaScript, HTML, CSS,</b> and Python. I have extensive experience in front-end development, utilizing frameworks like ReactJS, AngularJS, and Vue.js to build responsive and interactive user interfaces.</p>
+            <p class="text-white"> I am well-versed in using modern front-end tools such as webpack, Babel, and Sass to streamline development processes and optimize performance.</p>
+            <p class="text-white">To showcase my work, I have developed a portfolio website where you can find examples of my projects, along with detailed information about the technologies used and my role in each project. Feel free to explore my portfolio at [portfolio website URL].</p>
+
+        </div>
+<div class="text-center"> 
+
+<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-3 ">Hire me</a>
+<a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact </a>
+</div>
+</div>
+
+</div>
+
+{% endblock content %}
